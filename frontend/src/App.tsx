@@ -1,26 +1,27 @@
-import { useState } from 'react'
-import Navigation from './components/Navigation.tsx';
-// import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Chat from './pages/Chat';
+import Home from './pages/Home';
+import Images from './pages/Images';
+import Model from './pages/Model';
+import Models from './pages/Models';
+import Text from './pages/Text';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Navigation />
-      <h1>Hello</h1>
-      <div className="bg-blue-500 text-white p-4">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-      Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="flex h-screen bg-gray-200">
+        <Navigation />
+        <div className="overflow-x-scroll w-screen">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/models" element={<Models />} />
+            <Route path="/models/:modelId" element={<Model />} />
+            <Route path="/chat" element={<Chat />} />
+            <Route path="/text" element={<Text />} />
+            <Route path="/images" element={<Images />} />
+          </Routes>
+        </div>
+    </div>
   )
 }
 
