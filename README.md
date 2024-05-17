@@ -108,7 +108,7 @@ If you encounter any issues, you can forcefully terminate the processes by findi
 
 Change the backend port in the following files:
 - `backend/src/main/resources/application.yml`
-- `frontend/app/app.config.js`
+- `frontend/app/app.config.ts`
 
 To run the frontend on a different port:
 
