@@ -47,7 +47,7 @@ public class StableDiffusion {
         SdkBytes sdkBytesBody = SdkBytes.fromUtf8String(jsonBody.toString());
 
         InvokeModelRequest request = InvokeModelRequest.builder()
-                .modelId("stability.stable-diffusion-xl")
+                .modelId("stability.stable-diffusion-xl-v1")
                 .body(sdkBytesBody)
                 .build();
 

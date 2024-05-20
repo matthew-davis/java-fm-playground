@@ -22,7 +22,7 @@ public class ImagePlayground {
         this.client = client;
     }
 
-    @PostMapping ("/foundation-models/model/image/stability.stable-diffusion-xl/invoke")
+    @PostMapping ("/foundation-models/model/image/stability.stable-diffusion-xl-v1/invoke")
     public StableDiffusion.Response invoke(@RequestBody StableDiffusion.Request body) {
         try {
 

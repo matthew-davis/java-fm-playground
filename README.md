@@ -76,13 +76,11 @@ npm run dev
 When the application is running, you will see the following output:
 
 ```shell
-> frontend@0.1.0 dev
-> next dev
+VITE v5.2.10  ready in 105 ms
 
-   ▲ Next.js 14.0.0
-   - Local:        http://localhost:3000
-
- ✓ Ready in 3.3s
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
 ```
 
 ## Accessing the Application
